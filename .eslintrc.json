@@ -1,0 +1,27 @@
+{  
+    "env": {  
+        "es6": true,  
+        "browser": true,
+        "jest": true  
+    },  
+    "extends": "airbnb-base",  
+    "globals": {  
+        "Atomics": "readonly",  
+        "SharedArrayBuffler": "readonly"  
+    },  
+    "rules": { //исключение для расширений 
+        "import/extensions": [
+            "error",
+            "ignorePackages"
+        ],
+        "no-restricted-syntax": [
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+        ]
+    },
+    "parserOptions": { 
+        "ecmaVersion": 2018, 
+        "sourceType": "module" 
+    } 
+}
